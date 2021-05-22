@@ -1,3 +1,8 @@
+plugins { 
+    java 
+    id ("org.flywaydb.flyway") version "7.9.1"
+}
+
 tasks.register("hello"){
 
     doFirst{
