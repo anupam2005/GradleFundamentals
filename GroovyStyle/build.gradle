@@ -6,3 +6,12 @@ task hello{
         println(", Groovy Style")
     }
 }
+
+task aDependentTask{
+
+    dependsOn hello
+
+    doLast{
+        println("This is dependent task")
+    }
+}
